@@ -1,0 +1,124 @@
+.healthcare {
+	margin: 80px 0px 30px 0px;
+
+	@media (max-width: 991.98px) {
+		margin: 30px 0px 30px 0px;
+	}
+  // .healthcare__block-text
+
+  &__block-text {
+    margin: 0px 0px 45px 0px;
+  }
+
+  // .healthcare__items
+
+  &__items {
+    display: flex;
+
+    @media (max-width: 991.98px) {
+      flex-direction: column;
+    }
+  }
+
+  // .healthcare__item
+
+  &__column {
+    position: relative;
+    padding: 0px 36px;
+    flex: 0 1 33.33%;
+
+    @media (max-width: 1086.98px) {
+      padding: 0px 15px;
+    }
+    @media (max-width: 991.98px) {
+      &:not(:last-child) {
+        margin: 0px 0px 25px 0px;
+      }
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      background-color: $mainPinkColor;
+      position: absolute;
+      border-radius: 16px;
+    }
+    &_1 {
+      &::before {
+        width: 65px;
+        height: 65px;
+        bottom: -35px;
+        left: 15px;
+        transform: rotate(-30deg);
+      }
+      &::after {
+        width: 97px;
+        height: 97px;
+        border-radius: 30px;
+        top: 35px;
+        right: -10px;
+        transform: rotate(105deg);
+      }
+    }
+    &_2 {
+      &::before {
+        width: 127px;
+        height: 127px;
+        border-radius: 30px;
+        bottom: -30px;
+        right: -40px;
+        transform: rotate(-30deg);
+      }
+    }
+    &_3 {
+      &::before {
+        width: 65px;
+        height: 65px;
+        top: -30px;
+        right: 10px;
+        transform: rotate(-30deg);
+		  
+		  @media (max-width: 991.98px) {
+			display: none;
+		  }
+      }
+    }
+  }
+}
+
+.item-healthcare {
+  height: 100%;
+  z-index: 2;
+  position: relative;
+  background: #ffffff;
+  box-shadow: 0px 4px 18px rgba(88, 126, 236, 0.18);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 36px 17px;
+  // .item-healthcare_1
+
+  // .item-healthcare__icon
+
+  &__icon {
+    margin: 0px 0px 58px 0px;
+  }
+
+  // .item-healthcare__title
+
+  &__title {
+    font-size: 18px;
+    font-weight: 700;
+    color: $mainDarkColor;
+    margin: 0px 0px 4px 0px;
+    line-height: 138.5%;
+  }
+
+  // .item-healthcare__text
+
+  &__text {
+    line-height: 138.5%;
+  }
+}

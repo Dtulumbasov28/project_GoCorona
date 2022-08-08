@@ -1,0 +1,126 @@
+.get-started {
+  // .get-started__container
+
+  &__container {
+    padding: 150px 15px 50px 15px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+
+    @media (max-width: 767.98px) {
+      padding: 100px 15px 30px 15px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100vw;
+      height: 100%;
+      right: 252px;
+      top: 0;
+      transform: translate(100%, 0px);
+      border-radius: 20px 0px 0px 20px;
+      background-color: $mainPinkColor;
+
+      @media (max-width: 991.98px) {
+        right: 170px;
+      }
+
+      @media (max-width: 767.98px) {
+        display: none;
+      }
+    }
+  }
+
+  // .get-started__content
+
+  &__content {
+    flex: 0 1 48%;
+    padding: 0px 20px;
+
+    @media (max-width: 767.98px) {
+      flex: 1 1 auto;
+      padding: 0;
+    }
+  }
+
+  // .get-started__block-text
+
+  &__block-text {
+    max-width: 410px;
+
+    @media (max-width: 767.98px) {
+      max-width: none;
+    }
+  }
+
+  // .get-started__image
+
+  &__image {
+    position: relative;
+    z-index: 2;
+    flex: 0 1 52%;
+
+    @media (max-width: 767.98px) {
+      flex: 1 1 auto;
+      text-align: center;
+      padding: 30px 0;
+    }
+
+    & img {
+      max-width: 100%;
+    }
+  }
+
+  // .get-started__video
+
+  &__video {
+    flex: 1 1 100%;
+    padding: 60px 0px 0px 20px;
+
+	 @media (max-width: 767.98px) {
+		padding: 0;
+	 }
+  }
+}
+
+//====================================================================================================
+
+.video-get-started {
+  display: inline-flex;
+  align-items: center;
+
+  // .video-get-started__icon
+
+  &__icon {
+    flex: 0 0 44px;
+  }
+
+  // .video-get-started__body
+
+  &__body {
+    padding: 0px 0px 0px 12px;
+  }
+
+  // .video-get-started__title
+
+  &__title {
+    color: #b0b0b0;
+    line-height: 126%;
+    letter-spacing: 1.2px;
+    &:not(:last-child) {
+      padding: 0px 0px 5px 0px;
+    }
+  }
+
+  // .video-get-started__text
+
+  &__text {
+    color: $mainDarkColor;
+    text-transform: uppercase;
+    font-size: 10px;
+    line-height: 126%;
+    letter-spacing: 1.2px;
+  }
+}
