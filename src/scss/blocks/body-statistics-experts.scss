@@ -1,0 +1,49 @@
+.body-statistics-experts {
+	padding: 25px 80px;
+	display: flex;
+	align-items: center;
+ 
+	@media (max-width: 767.98px) {
+	  padding: 25px;
+	}
+ 
+	@media (max-width: 479.98px) {
+	  flex-direction: column;
+	}
+ 
+	// .body-statistics-experts__item
+ 
+	&__item {
+	  flex: 1 1 25%;
+	  text-align: center;
+ 
+	  &:last-child {
+		 flex: 1 1 50%;
+	  }
+	}
+ 
+	// .body-statistics-experts__value
+ 
+	&__value {
+	  font-size: 36px;
+	  font-weight: 700;
+	  color: $mainPinkColor;
+	  letter-spacing: 1.2px;
+	  margin-bottom: 5px;
+ 
+	  @media (max-width: 479.98px) {
+		 margin-bottom: 15px;
+	  }
+	}
+ 
+	// .body-statistics-experts__text
+ 
+	&__text {
+	  color: $mainDarkColor;
+	  font-size: 12px;
+	  font-weight: 700;
+	  text-transform: uppercase;
+	  letter-spacing: 2px;
+	}
+ }
+ 

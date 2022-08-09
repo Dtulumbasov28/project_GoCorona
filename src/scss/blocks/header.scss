@@ -1,0 +1,55 @@
+.header {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 50;
+
+  // .header__container
+
+  &__container {
+    display: flex;
+    min-height: 114px;
+    align-items: center;
+
+    @media (max-width: 991.98px) {
+      min-height: 90px;
+    }
+  }
+
+  // .header__logo
+
+  &__logo {
+    position: relative;
+    z-index: 5;
+    img {
+      width: 160px;
+      height: 50px;
+    }
+    @media (max-width: 479.98px) {
+      flex: 0 0 40px;
+      overflow: hidden;
+    }
+  }
+
+  // .header__menu
+
+  &__menu {
+    flex: 1 1 auto;
+  }
+
+  // .header__button
+
+  &__button {
+    position: relative;
+    z-index: 5;
+    flex: 0 0 252px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    @media (max-width: 991.98px) {
+      flex: 0 0 170px;
+    }
+  }
+}

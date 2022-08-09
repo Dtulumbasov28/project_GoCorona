@@ -5,11 +5,6 @@
 	padding: 30px 0;
   }
 
-  // .footer__container
-
-  &__container {
-  }
-
   // .footer__items
 
   &__items {
@@ -22,10 +17,5 @@
     @media (max-width: 500px) {
       flex-direction: column;
     }
-  }
-
-  // .footer__item
-
-  &__item {
   }
 }

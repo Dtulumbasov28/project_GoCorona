@@ -1,0 +1,59 @@
+.statistics-experts {
+  max-width: 655px;
+  margin: 0 auto;
+  position: relative;
+
+  // .statistics-experts__body
+
+  &__body {
+    background-color: #fff;
+    box-shadow: 0px 2px 24px rgba(88, 126, 236, 0.15);
+    border-radius: 16px;
+    position: relative;
+    z-index: 2;
+    margin: 0px 0px 80px 0px;
+
+    @media (max-width: 767.98px) {
+      margin: 0px 0px 80px 0px;
+    }
+  }
+
+  // .statistics-experts__item
+
+  &__item {
+    position: absolute;
+    background-color: $mainPinkColor;
+    border-radius: 30px;
+
+    // .statistics-experts__item_1
+
+    &_1 {
+      width: 65px;
+      height: 65px;
+      transform: rotate(-30deg);
+      bottom: -21px;
+      left: -31px;
+      border-radius: 16px;
+    }
+
+    // .statistics-experts__item_2
+
+    &_2 {
+      transform: rotate(105deg);
+      width: 97px;
+      height: 97px;
+      right: 50%;
+      top: -40px;
+    }
+
+    // .statistics-experts__item_3
+
+    &_3 {
+      transform: rotate(-30deg);
+      width: 128px;
+      height: 128px;
+      right: -55px;
+      top: 0;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.button {
+	display: inline-flex;
+	color: white;
+	font-size: 12px;
+	font-weight: 500;
+	padding: 14px 32px;
+	border-radius: 5px;
+	background-color: $mainPinkColor;
+	transition: background-color 0.3s ease 0s;
+ 
+	&:hover {
+	  background-color: #e44c56;
+	}
+ 
+	// .button_blue
+ 
+	&_blue {
+	  background-color: #3575db;
+ 
+	  &:hover {
+		 background-color: #2860b9;
+	  }
+	}
+ }

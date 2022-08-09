@@ -78,6 +78,9 @@ body {
 	font-family: $fontFamily;
 	font-size: $fontSize;
 	color: $mainColor;
+	&.no-scroll {
+		overflow: hidden;
+	}
 }
 a {
   text-decoration: none;
@@ -121,14 +124,19 @@ h6 {
 // Ограничивающий контейнер ======================================================================================================================================================================================================================
 
 // Подключение стилей отдельных блоков
-@import "header";
-@import "footer";
-@import "get-started";
-@import "stay-safe";
-@import "experts";
-@import "healthcare";
-@import "block-text";
-@import "footer";
-
-// Подключение стилей отдельных страниц
-@import "home";
+@import "./blocks/header";
+@import "./blocks/icon-menu";
+@import "./blocks/button";
+@import "./blocks/menu";
+@import "./blocks/footer";
+@import "./blocks/get-started";
+@import "./blocks/video-get-started";
+@import "./blocks/stay-safe";
+@import "./blocks/media-stay-safe";
+@import "./blocks/experts";
+@import "./blocks/statistics-experts";
+@import "./blocks/body-statistics-experts";
+@import "./blocks/healthcare";
+@import "./blocks/item-healthcare";
+@import "./blocks/block-text";
+@import "./blocks/footer";
