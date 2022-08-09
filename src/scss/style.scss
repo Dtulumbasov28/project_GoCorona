@@ -1,7 +1,6 @@
-
 // Шрифт по умолчанию ==============================================================================================================================================================================================================================================================================
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
-$fontFamily: 'Rubik', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+$fontFamily: "Rubik", sans-serif;
 $fontSize: 14px; // где 14(px) - размер шрифта по умолчанию из макета
 
 // Основные цвета
@@ -32,31 +31,28 @@ $tablet: 970px; // Планшеты, некоторые телефоны в го
 $mobile: 750px; // Телефоны L
 $mobileSmall: 480px; // Телефоны S
 
-
 [class*="__container"] {
-	max-width: $maxWidthContainer;
-	margin: 0 auto;
-	padding: 0 15px
+  max-width: $maxWidthContainer;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 // PC
 @media (max-width: $maxWidthContainer) {
-	[class*="__container"] {
-		max-width: $tablet;
-
-	}
+  [class*="__container"] {
+    max-width: $tablet;
+  }
 }
 // Tablet
 @media (max-width: 991.98px) {
-	[class*="__container"] {
-		max-width: $mobile;
-
-	}
+  [class*="__container"] {
+    max-width: $mobile;
+  }
 }
 // Mobile
 @media (max-width: 767.98px) {
-	[class*="__container"] {
-		max-width: none;
-	}
+  [class*="__container"] {
+    max-width: none;
+  }
 }
 
 // Минимальное обнуление стилей
@@ -72,15 +68,14 @@ html,
 body {
   height: 100%;
   line-height: 1;
-  
 }
 body {
-	font-family: $fontFamily;
-	font-size: $fontSize;
-	color: $mainColor;
-	&.no-scroll {
-		overflow: hidden;
-	}
+  font-family: $fontFamily;
+  font-size: $fontSize;
+  color: $mainColor;
+  &.no-scroll {
+    overflow: hidden;
+  }
 }
 a {
   text-decoration: none;
@@ -119,7 +114,6 @@ h6 {
     min-width: 0;
   }
 }
-
 
 // Ограничивающий контейнер ======================================================================================================================================================================================================================
 
